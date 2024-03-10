@@ -1,5 +1,88 @@
-*,::before,::after{
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+* {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    font-family: henken;
+    font-weight: 500;
+}
+@font-face {
+    font-family: henken;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+main .result {
+    border-radius: 20px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+main {
+    background-color: var(--White);
+    width: 50%;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 2px 4px 7px black;
+
+}
+p {
+    font-size: 18px;
+}
+.result {
+    color: var(--White);
+    border-radius: 20px;
+    background-color: var(--Light-royal-blue-background);
+}
+.result,
+.details {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.summaryItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 12px;
+}
+button{
+    width: 60%;
+    padding: 8px;
+    font-weight: 800;
+    background-color: var(--Dark-gray-blue);
+    border-radius: 20px;
+    border: none;
+    color: var(--White);
+}
+button:hover{
+    cursor: pointer;
+}
+img{
+    padding-right: 12px;
+}
+.details h2{
+    color:var(--Dark-gray-blue);
+    text-align: left;
 }
