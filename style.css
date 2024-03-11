@@ -43,16 +43,18 @@ main {
     margin: auto;
     display: flex;
     border-radius: 20px;
-    box-shadow: 2px 4px 7px black;
-
+    box-shadow: 2px 4px 7px var(--Pale-blue);
 }
 p {
     font-size: 18px;
+    color: var(--Light-lavender);
+    padding: 0px 25px 25px 25px;
+    opacity: 0.6;
 }
 .result {
     color: var(--White);
     border-radius: 20px;
-    background-color: var(--Light-royal-blue-background);
+    background: linear-gradient(#6641fd, #322bea);
 }
 .result,
 .details {
@@ -60,15 +62,15 @@ p {
     text-align: center;
     padding: 10px;
 }
-.summaryItem{
+.summaryItem {
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
     margin: 12px;
 }
-button{
-    width: 60%;
+.button {
+    margin: 24px 12px;
     padding: 8px;
     font-weight: 800;
     background-color: var(--Dark-gray-blue);
@@ -76,13 +78,70 @@ button{
     border: none;
     color: var(--White);
 }
-button:hover{
+.button:hover {
     cursor: pointer;
+    background-color: var(--Light-royal-blue-background);
 }
-img{
-    padding-right: 12px;
+img {
+    padding-right: 20px;
 }
-.details h2{
-    color:var(--Dark-gray-blue);
+h2 {
+    color: var(--Light-lavender);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.details h2 {
+    color: var(--Dark-gray-blue);
     text-align: left;
+    margin-left: 10px;
+    font-size: 26px;
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 100%;
+    background-color: var(--Persian-blue-circle);
+    box-shadow: 0px 3px #0c0b0b52;
+}
+.right span:first-child {
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+.right span:last-child {
+    color: var(--Light-lavender);
+}
+.left span {
+    font-weight: 600;
+}
+.score {
+    font-weight: 700;
+    font-size: 50px;
+}
+.scoreof {
+    color: var(--Light-lavender);
+}
+.headline {
+    font-size: 24px;
+    padding: 14px;
+}
+@media (max-width:650px){
+    .result,.details{
+        width:100%;
+    }
+    main{
+        flex-direction: column;
+        width:90%;
+    }
+}
+@media (max-width:1050px){
+    main{
+        width:80%;
+    }
 }

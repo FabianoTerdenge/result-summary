@@ -8,7 +8,9 @@ fetch('data.json')
             //create element 
             let left = document.createElement("div");
             left.style.display ="flex";
+            left.className = "left";
             let right = document.createElement("div");
+            right.className = "right"
             let element = document.createElement("div");
             element.className = "summaryItem";
             element.style.backgroundColor = summaryItem.backgroundColor;

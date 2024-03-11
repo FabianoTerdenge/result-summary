@@ -4,27 +4,27 @@
     "score": 80,
     "icon": "./assets/images/icon-reaction.svg",
     "color":"hsl(0, 100%, 67%)",
-    "backgroundColor":"rgba(255, 87, 87, .2)"
+    "backgroundColor":"rgba(255, 87, 87, .1)"
   },
   {
     "category": "Memory",
     "score": 92,
     "icon": "./assets/images/icon-memory.svg",
     "color":"hsl(39, 100%, 56%)",
-    "backgroundColor":"rgba(255, 176, 31, .2)"
+    "backgroundColor":"rgba(255, 176, 31, .1)"
   },
   {
     "category": "Verbal",
     "score": 61,
     "icon": "./assets/images/icon-verbal.svg",
     "color":"hsl(166, 100%, 37%)",
-    "backgroundColor":"rgba(0, 189, 145, .2)"
+    "backgroundColor":"rgba(0, 189, 145, .1)"
   },
   {
     "category": "Visual",
     "score": 72,
     "icon": "./assets/images/icon-visual.svg",
     "color":"hsl(234, 85%, 45%)",
-    "backgroundColor":"rgba(17, 37, 212, .2)"
+    "backgroundColor":"rgba(17, 37, 212, .1)"
   }
 ]
